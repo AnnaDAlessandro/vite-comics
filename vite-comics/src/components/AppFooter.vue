@@ -166,6 +166,21 @@ data(){
                 </div>
             </nav>
         </div>
+        <div class="bg-grey">
+            <div>
+                <button></button>
+            </div>
+            <div>
+                <h3></h3>
+                <ul>
+                    <li>
+                        <figure>
+                            <img src="" alt="">
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </footer>
   
@@ -178,13 +193,17 @@ footer{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 30px 0;
     >div:first-child{
+        background-image: url(../img/dc-logo-bg.png);
+        background-position: right;
+        background-repeat: no-repeat;
         margin: 0 auto;
         width: 80%;
         nav{
             display: flex;
             gap: 50px;
+            padding: 30px 0;
+
             h5{
                 margin-top: 10px;
                 margin-bottom: 10px;
@@ -200,6 +219,9 @@ footer{
             }
              
         }
+    }
+    .bg-grey{
+        background-color: #303030;
     }
 }
 
