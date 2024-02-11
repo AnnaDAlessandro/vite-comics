@@ -54,6 +54,7 @@
 
 <template>
   <header>
+    <div>
     <nav>
         <figure>
             <img src="../img/dc-logo.png" alt="" height="70">
@@ -66,16 +67,24 @@
                 <a :class="element.current ? 'active' : ''" href="">{{element.name }}</a>
             </li>
         </ul>
-    </nav>
+    </nav>   
+    </div>
+
   </header>
  
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
  header{
     background-color: white;
     color: black;
     height: 100px;
+    
+    >div:first-child{
+        margin: 0 auto;
+        width: 80%;
+
+    }
 
     nav{
         display: flex;
