@@ -95,6 +95,12 @@
         display: flex;
         align-items: center;
         gap: 25px;
+        li{
+            color: black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height:97px;
+        }
     }
     .active-border-bottom{
         border-bottom: 4px solid #0282f9;

@@ -50,6 +50,7 @@
         </div>
 
       </div> 
+      
     </main>
   
  
@@ -82,8 +83,10 @@ main{
                 align-items: center;
                 gap: 20px;
                 figure{
+                    display: flex;
+                    align-items: center;
                     img{
-                        width: 60px;
+                        height: 60px;
                     }
                 }
                 span{
