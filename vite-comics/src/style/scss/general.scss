@@ -5,4 +5,17 @@
 }
 body{
     background-color: black;
+    color: white;
+    font-family: sans-serif;
+}
+li{
+    list-style-type: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color: #0282f9;
+    }
 }
