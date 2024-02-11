@@ -112,8 +112,31 @@ data(){
                 link:'#'
             }
 
-         ]
+         ],
+        
+        menuImageFooter:[
+            { 
+                name:"",
+                image:"footer-facebook.png"
+            },
+            { 
+                name:"",
+                image:"footer-periscope.png"
+            },
+            { 
+                name:"",
+                image:"footer-pinterest.png"
+            },
+             { 
+                name:"",
+                image:"footer-twitter.png"
 
+            },
+            { 
+                name:"",
+                image:"footer-youtube.png"
+            }
+        ]
 
     }
 }
@@ -167,19 +190,24 @@ data(){
             </nav>
         </div>
         <div class="bg-grey">
+            <div class="limitatore"> 
             <div>
-                <button></button>
+           <button>SIGN-UP NOW!</button>
             </div>
-            <div>
-                <h3></h3>
+            <div >
+                <h3>FOLLOW US</h3>
                 <ul>
-                    <li>
-                        <figure>
-                            <img src="" alt="">
-                        </figure>
+                    <li 
+                    v-for="(element,index) in menuImageFooter"
+                :key="index"> 
+                <figure>
+                    <img :src="`./src/img/${element.image} `" alt="">
+                </figure>
                     </li>
                 </ul>
             </div>
+        </div>
+           
         </div>
 
     </footer>
@@ -222,6 +250,37 @@ footer{
     }
     .bg-grey{
         background-color: #303030;
+        
+        .limitatore{
+            margin: 0 auto;
+            width: 80%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+              div{
+                button{
+                    padding: 10px;
+                    background-color: #303030;
+                    border: 2px solid #0282f9;
+                    color: white;
+                    font-weight: bold;
+                }
+              }
+              div{
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                h3{
+                    color: #0282f9;
+                }
+                ul{
+                    display: flex;
+                    gap: 20px;
+                }
+              }
+
+        }
     }
 }
 

@@ -3,7 +3,7 @@
  name:"AppMain",
  data(){
     return{
-        menuImage:[
+menuImage:[
             { 
                 name:"DIGITAL COMICS",
                 image:"buy-comics-digital-comics.png"
@@ -16,9 +16,10 @@
                 name:"SUBSCRIPTIONS",
                 image:"buy-comics-subscriptions.png"
             },
-            { 
+             { 
                 name:"COMICS SHOP LOCATOR",
                 image:"buy-comics-shop-locator.png"
+
             },
             { 
                 name:"DC POWER VISA",
