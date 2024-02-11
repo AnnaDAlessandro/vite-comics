@@ -56,13 +56,14 @@
   <header>
     <nav>
         <figure>
-            <img src="../img/dc-logo.png" alt="">
+            <img src="../img/dc-logo.png" alt="" height="70">
         </figure>
         <ul>
             <li
+            :class="element.current ? 'active-border-bottom' : ''"
             v-for="(element,index) in  menuLinks "
             :key="index">
-                <a href="">{{element.name }}</a>
+                <a :class="element.current ? 'active' : ''" href="">{{element.name }}</a>
             </li>
         </ul>
     </nav>
@@ -74,7 +75,7 @@
  header{
     background-color: white;
     color: black;
-    padding: 15px;
+    height: 100px;
 
     nav{
         display: flex;
@@ -85,10 +86,13 @@
         display: flex;
         align-items: center;
         gap: 25px;
-        padding: 20px;
-
     }
-  
+    .active-border-bottom{
+        border-bottom: 4px solid #0282f9;
+    }
+   .active{
+    color: #0282f9;
+   }
  }
 
 </style>
